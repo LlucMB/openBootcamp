@@ -3,14 +3,16 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+        Coche miCoche = new Coche();
+        miCoche.AnadirPuerta();
+        System.out.println(miCoche.puertas);
+    }
+}
 
-            int resultado = suma(50, 30, 20);
+class Coche {
+    public int puertas = 5;
 
-            System.out.println(resultado);
-        }
-
-        public static int suma(int a, int b, int c) {
-            return a + b + c;
-        }
-
+    public void AnadirPuerta() {
+        this.puertas++;
+    }
 }
